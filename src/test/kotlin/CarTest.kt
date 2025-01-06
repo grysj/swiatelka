@@ -1,10 +1,10 @@
 package org.example
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.*
 
 class CarTest {
-    
+
     @Test
     fun `getName should return correct carID`() {
         val expectedId = "ABC123"
@@ -15,7 +15,7 @@ class CarTest {
         assertEquals(expectedId, actualId)
     }
 
-    
+
     @Test
     fun `getName should preserve special characters in carID`() {
         val expectedId = "Car#123-@!"

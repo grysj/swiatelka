@@ -44,9 +44,11 @@ enum class Direction {
             this.forward() -> {
                 CarDirection.FORWARD
             }
+
             this.left() -> {
                 CarDirection.LEFT
             }
+
             else -> {
                 CarDirection.RIGHT
             }
