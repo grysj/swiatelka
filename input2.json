@@ -1,0 +1,40 @@
+{
+    "commands": {
+        "0": [
+            {
+                "carName": "Car1",
+                "directionFrom": "NORTH",
+                "directionTo": "SOUTH"
+            },
+            {
+                "carName": "Car2",
+                "directionFrom": "EAST",
+                "directionTo": "WEST"
+            }
+        ],
+        "2": [
+            {
+                "carName": "Car3",
+                "directionFrom": "WEST",
+                "directionTo": "EAST"
+            },
+            {
+                "carName": "Car4",
+                "directionFrom": "SOUTH",
+                "directionTo": "NORTH"
+            }
+        ],
+        "4": [
+            {
+                "carName": "Car5",
+                "directionFrom": "NORTH",
+                "directionTo": "EAST"
+            },
+            {
+                "carName": "Car6",
+                "directionFrom": "SOUTH",
+                "directionTo": "WEST"
+            }
+        ]
+    }
+}

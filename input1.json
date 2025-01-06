@@ -1,0 +1,18 @@
+{
+    "commands": {
+        "0": [
+            {
+                "carName": "Car1",
+                "directionFrom": "NORTH",
+                "directionTo": "SOUTH"
+            }
+        ],
+        "1": [
+            {
+                "carName": "Car2",
+                "directionFrom": "EAST",
+                "directionTo": "WEST"
+            }
+        ]
+    }
+}
