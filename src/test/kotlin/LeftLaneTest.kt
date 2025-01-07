@@ -14,42 +14,33 @@ class LeftLaneTest {
 
     @Test
     fun `car with FORWARD direction should drive away on FR light`() {
-        // Arrange
         val car = Car("car1", CarDirection.FORWARD)
         leftLane.addCar(car)
 
-        // Act
         leftLane.step(LightType.FR, 1)
 
-        // Assert
         assertEquals(0, leftLane.countCars())
     }
 
     @Test
     fun `car with LEFT direction should drive away on LEFT light`() {
-        // Arrange
         val car = Car("car1", CarDirection.LEFT)
         leftLane.addCar(car)
 
-        // Act
         leftLane.step(LightType.LEFT, 1)
 
-        // Assert
         assertEquals(0, leftLane.countCars())
     }
 
     @Test
     fun `car with LEFT direction should not drive away on FR light`() {
-        // Arrange
         val car = Car("car1", CarDirection.LEFT)
         val laneChangeListener = LaneChangeListener(leftLane)
         car.addListener(laneChangeListener)
         leftLane.addCar(car)
 
-        // Act
         leftLane.step(LightType.FR, 1)
 
-        // Assert
         assertEquals(1, leftLane.countCars())
     }
 

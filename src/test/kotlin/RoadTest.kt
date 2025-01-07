@@ -46,7 +46,6 @@ class RoadTest {
 
     @Test
     fun `LEFT direction car should always go to leftLane`() {
-        // Arrange
         val car = Car("test1", CarDirection.LEFT)
 
         road.addCar(car)

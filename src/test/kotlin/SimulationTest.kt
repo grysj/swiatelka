@@ -25,7 +25,6 @@ class SimulationTest {
         simulation.runSimulation()
 
         val results = simulation.simulationResults.getResult()
-        println(results)
         assertTrue(results.any { (_, cars) -> cars.any { it == "Car1" } })
     }
 

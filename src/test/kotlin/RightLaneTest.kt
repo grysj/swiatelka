@@ -82,8 +82,8 @@ class RightLaneTest {
 
     @Test
     fun `first car blocking should prevent subsequent cars from driving away`() {
-        val car1 = Car("car1", CarDirection.LEFT)     // This car can't move on FR
-        val car2 = Car("car2", CarDirection.FORWARD)  // This car could move on FR, but is blocked
+        val car1 = Car("car1", CarDirection.LEFT)
+        val car2 = Car("car2", CarDirection.FORWARD)
         rightLane.addCar(car1)
         rightLane.addCar(car2)
 
